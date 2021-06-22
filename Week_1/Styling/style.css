@@ -16,12 +16,14 @@ h2{
     text-align: center;
     background-color: purple;
     font-style: italic;
+    font-weight: lighter;
     color: white;
 }
 h3{
     background-color: skyblue;
     text-align: right;
     text-decoration: black;
+    font-weight: lighter;
 }
 a{
     color: black;
