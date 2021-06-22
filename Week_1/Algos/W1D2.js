@@ -1,0 +1,2 @@
+// Variables
+var myName = "Chris"
