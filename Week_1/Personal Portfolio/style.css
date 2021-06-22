@@ -1,13 +1,53 @@
 /*
 Selector{
-    Attribnutes : Properties;
+    Attributes : Properties;
 }
 
 */
 
+
+/*
+* MEANS ALL. APPLIES TO ALL HTML REGARDLESS OF CLASS AND ID
+*/
+/*____________________
+CSS RESET
+______________________*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
 h1{
-    color:crimson; 
+    color:black; 
 }
 table{
-    color:rgb(0, 0, 240);
+    color:rgb(0, 0, 0);
+    background-color: black;
+}
+body{
+    color: white;
+    background-color:darksalmon;
+    width: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* ID */
+#MyName{
+    color:cadetblue;
+}
+
+/* Classes */
+.TableTitle{
+    background-color: cornsilk;
+}
+
+.TableContent{
+    background-color: darkolivegreen;
+    
+}
+
+/* DIV TAGS */
+
+#footer > h3{
+    
 }

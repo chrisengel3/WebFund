@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    font-family:sans-serif;
+}
+h1{
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+span{
+    color: cyan;
+}
+h2{
+    text-align: center;
+    background-color: purple;
+    font-style: italic;
+}
+h3{
+    background-color: skyblue;
+    text-align: right;
+    text-decoration: black;
+}
+a{
+    color: black;
+}
