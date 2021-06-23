@@ -1,0 +1,27 @@
+.nav{
+    display: flex;
+    border: solid 1px black;
+    width: 900px;
+    height: auto;
+    padding: 0px 20px 0px 20px;
+}
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    align-items: center;
+    width: 900px;
+}
+li{
+    margin-left: 20px;
+}
+button{
+    border: solid 3px black;
+    background-color: aqua;
+    color: white;
+    box-shadow: 2px 2px black;
+
+}
+a{
+    text-decoration: none;
+}
