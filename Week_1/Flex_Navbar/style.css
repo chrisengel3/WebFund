@@ -4,6 +4,8 @@
     width: 900px;
     height: auto;
     padding: 0px 20px 0px 20px;
+    background-color: darkgray;
+    color: white;
 }
 .nav-links{
     display: flex;
@@ -24,4 +26,5 @@ button{
 }
 a{
     text-decoration: none;
+    color: white;
 }
