@@ -27,7 +27,7 @@
     height: 200px;
     margin: 15px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 15px;
 }
 h1{
