@@ -4,11 +4,24 @@
     padding: 0;
     font-family: 'Roboto';
 }
+.container{
+    width: 950px;
+    min-height: 700px;
+    display: flex;
+}
+#topbar{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    height: 50px;
+    width: auto;
+}
 #card{
     outline: solid 3px lightgray;
-    width: 500px;
-    height: 250px;
+    width: 400px;
+    height: 300px;
     margin: 20px;
+
 }
 .blue{
     background-color: teal;
