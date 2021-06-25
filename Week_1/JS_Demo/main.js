@@ -19,3 +19,5 @@ function likeAlert(){
     var button = document.querySelector(".likeButton")
     alert("Ninja has been liked!")
 }
+
+//this > element
