@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <meta http-equiv="refresh" content="1"> -->
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <h1 class="nav-title">Dojonary</h1>
+            <input type="text" placeholder="Search" class="search">
+            <button onclick="changeText()" id="loginbtn">Login</button>
+        </div>
+        <div class="main">
+            <div id="leftpanel">
+                <div class="definitionPanel">
+                    <div class="definitionText">
+                        <h1 class="definedword">NINJA</h1>
+                        <p class="wordclass">noun</p>
+                        <p class="wordclass">Plural: <span>ninjas</span></p>
+                        <button onclick="likeAlert()" class="likeButton">13 likes</button>
+                    </div>
+                    <p class="definition">A practitioner skilled in the <a href="" class="generalLink">Japanese</a> art of <a href="" class="generalLink">ninjutsu</a></p>
+                </div>
+                <div class="definitionPanel">
+                    <div class="definitionText">
+                        <h1 class="definedword">NINJA</h1>
+                        <p class="wordclass">noun</p>
+                        <p class="wordclass">Plural: <span>ninjas</span></p>
+                        <button onclick="likeAlert()" class="likeButton">13 likes</button>
+                    </div>
+                    <p class="definition">A <a href="" class="generalLink">programmer</a> who breaks down problems with <a href="" class="generalLink">zen</a>-like focus</p>
+                </div>
+            </div>
+            <div id="rightpanel">
+                <div class="advertisement">
+                    <div class="definitionPanel">
+                        <div class="advertisementText">
+                            <h3 class="definedword">Dojonary is defined by <span>YOU</span></h3>
+                            <button onclick="removeText()" class="contributionButton">Add Definition</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CONNECTED JS -->
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto';
+}
+.container{
+    width: 900px;
+    min-height: 400px;
+
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    border: solid 1px black;
+    width: 900px;
+    height: 75px;
+    margin: 0px 50px 0px 50px;
+    background-color: darkgray;
+    color: white;
+    align-items: center;
+}
+#loginbtn{
+    border: solid 3px black;
+    background-color: aqua;
+    color: white;
+    box-shadow: 2px 2px black;
+    width: 75px;
+    height: 35px;
+}
+.search{
+    width: 50%;
+    height: 35px;
+    padding-left: 5px;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    min-height: 300px;
+    margin: 20px 50px 20px 50px;
+}
+#leftpanel{
+
+    width: 69%;
+    min-height: 350px;
+    /* outline: solid 1px black; */
+
+}
+#rightpanel{
+    width: 28%;
+    min-height: 350px;
+    /* outline: solid 1px black; */
+}
+.definitionPanel{
+    outline: 2px solid black;
+    min-height: 100px;
+    width: auto;
+    margin-bottom: 20px;
+    padding: 15px 15px;
+    align-items: center;
+}
+.definitionText{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    margin-right: 50px;
+    align-items: center;
+}
+.definitionText > p > span{
+    font-style: italic;
+}
+.advertisementText{
+    display: inline-block;
+    width: 100%;
+    margin-right: 50px;
+    font-size: 20px;
+}
+.advertisementText > h3{
+    text-align: left;
+}
+.advertisementText > button{
+    text-align: center;
+}
+.advertisementText > h3 > span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+.likeButton{
+    margin-top: 20px;
+    width: 90%;
+    height: 30px;
+    background-color: goldenrod;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px black;
+}
+.definition{
+    display: inline-block;
+    width: 60%;
+    height: 50%;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.contributionButton{
+    width: 100%;
+    background-color: rgb(101, 177, 134);
+    height: 45px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 5px black;
+}
