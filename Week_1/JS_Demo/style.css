@@ -17,7 +17,7 @@
     height: 75px;
     margin: 0px 50px 0px 50px;
     background-color: darkgray;
-    color: white;
+    color: black;
     align-items: center;
 }
 #loginbtn{
@@ -32,6 +32,7 @@
     width: 50%;
     height: 35px;
     padding-left: 5px;
+    padding: 0px 50px;
 }
 .main{
     display: flex;
