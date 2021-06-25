@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto';
+}
+.container{
+    width: 1200px;
+    min-height: 750px;
+    background-color: white;
+}
+#topbar{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+    align-items: center;
+    padding: 10px 40px 10px 92px;
+    width: 900px;
+}
+#navlinks{
+    width: 450px;
+    margin-left: 0px;
+
+}
+#navlinks > li{
+    display:inline-block;
+    color: white;
+    margin: 5px 20px 0px 0px;
+    
+}
+#signout{
+    width: 100px;
+    height: 35px;
+    color: white;
+    background: turquoise;
+    margin-right: 48px;
+}
+#card{
+    outline: solid 3px lightgray;
+    width: 400px;
+    height: 275px;
+    margin: 21px 10px 10px 10px;
+    position: relative;
+}
+.blue{
+    background-color: teal;
+    width: 100%;
+    height: 30%;
+}
+#profpic{
+    width: 50px;
+    margin: 3px;
+    padding: 2px;
+    border: solid 3px lightgray;
+    border-radius: 50px;
+    margin-left: 15px;
+    position: relative;
+    top: 45px;
+}
+#name{
+    margin: 30px 18px 5px 18px;
+}
+#location{
+    margin: 0px 10px 5px 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+.charms{
+    width: 12px;
+    margin-left: 21px;
+    vertical-align: center;
+}
+.description{
+    margin-left: 20px;
+    margin-bottom: 1px;
+}
+#editprofile{
+    margin-top: 10px;
+    vertical-align: center;
+}
+#main{
+    display: flex;
+}
+#leftpanel{
+    width: 60%;
+    min-height: 500px;
+    padding: 10px 10px 25px 142px;
+    /* outline: 1px solid grey; */
+}
+#rightpanel{
+    width: 40%;
+    min-width: 500px;
+    padding: 10px 142px 25px 10px;
+    /* outline: 1px solid grey; */
+}
+.educontent > h3,
+.educontent > h4{
+    margin: 10px 15px 10px 15px;
+}
+.educontent > p{
+    margin: 25px 0px 10px 15px;
+}
+#connectionreq{
+    display: inline-block;
+    align-items: top;
+    width: 300px;
+    min-height: 100px;
+    margin: 20px 10px 0px 0px;
+    border: solid 3px lightgray;
+}
+#viewmorebox{
+    display: flex;
+    width: 300px;
+    height: 50px;
+    border: solid 3px lightgray;
+    border-top: none;
+
+}
+#viewmorebox > a{
+    align-items: center;
+    margin-top: 20px;
+    margin:auto 0;
+    padding-left: 15px;
+}
+#Education{
+    display: inline-block;
+    align-items: top;
+    width: 399px;
+    min-height: 200px;
+    margin: 20px 0px 10px 10px;
+    border: solid 3px lightgray;
+}
+.paneltitletext{
+    text-align: center;
+    vertical-align: center;
+    color: white;
+    font-size: 16px;
+    padding: 14px 0px 10px 0px;
+}
+.edupaneltitletext{
+    text-align: left;
+    vertical-align: center;
+    color: white;
+    font-size: 16px;
+    padding: 14px 0px 10px 0px;
+    margin-left: 15px;
+}
+.notification500,
+.notification2{
+    background-color: grey;
+    border: solid 1px grey;
+    border-radius: 50%;
+    margin-top: 12px;
+    width: auto;
+    min-width: 25px;
+    height: 25px;
+}
+.panelbar{
+    width: 94%;
+    height: 50px;
+    background-color: black;
+    padding: 0px 8px 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: bottom;
+}
+.edupanelbar{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+.otheruseryn{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 15px 10px;
+}
+.yessymbol,
+.nosymbol,
+.otheruserpic{
+    width: 35px;
+    margin-right: 10px;
+}
+.otherusername{
+    width: 150px;
+}

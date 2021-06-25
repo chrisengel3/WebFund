@@ -30,9 +30,7 @@
     justify-content: space-between;
     padding: 15px;
 }
+p,
 h1{
-    text-align: center;
-}
-p{
     text-align: center;
 }

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto';
+}
+.container{
+    width: 1200px;
+    min-height: 750px;
+}
+#topbar{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+    align-items: center;
+    padding: 10px 150px;
+}
+#navlinks{
+    width: 1000px;
+    margin-left: 20px;
+
+}
+#navlinks > li{
+    display:inline-block;
+    color: white;
+    margin: 5px 35px 0px 20px;
+    
+}
+#signout{
+    width: 175px;
+    height: 35px;
+    color: white;
+    background: turquoise;
+}
+#card{
+    outline: solid 3px lightgray;
+    width: 550px;
+    height: 300px;
+    margin: 20px 10px 10px 10px;
+    position: relative;
+}
+.blue{
+    background-color: teal;
+    width: 100%;
+    height: 30%;
+}
+#profpic{
+    width: 50px;
+    margin: 3px;
+    padding: 2px;
+    border: solid 3px lightgray;
+    border-radius: 50px;
+    margin-left: 15px;
+    position: relative;
+    top: 55px;
+}
+#name{
+    margin: 30px 18px 5px 18px;
+}
+#location{
+    margin: 0px 10px 5px 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+.charms{
+    width: 12px;
+    margin-left: 21px;
+    vertical-align: center;
+}
+.description{
+    margin-left: 20px;
+    margin-bottom: 1px;
+}
+#editprofile{
+    margin-top: 10px;
+    vertical-align: center;
+}
+#main{
+    display: flex;
+}
+#leftpanel{
+    width: 60%;
+    min-height: 500px;
+    padding: 0px 10px 25px 142px;
+    /* outline: 1px solid grey; */
+}
+#rightpanel{
+    width: 40%;
+    min-width: 500px;
+    padding: 0px 142px 25px 10px;
+    /* outline: 1px solid grey; */
+}
+#connectionreq{
+    display: inline-block;
+    align-items: top;
+    width: 300px;
+    min-height: 200px;
+    margin: 20px 10px 10px 0px;
+    border: solid 3px lightgray;
+}
+#Education{
+    display: inline-block;
+    align-items: top;
+    width: 549px;
+    min-height: 200px;
+    margin: 20px 0px 10px 10px;
+    border: solid 3px lightgray;
+}
+.paneltitletext{
+    text-align: center;
+    vertical-align: center;
+    color: white;
+    font-size: 16px;
+    padding: 14px 0px 10px 0px;
+}
+.notification2{
+    background-color: grey;
+    border: solid 1px grey;
+    border-radius: 50%;
+    margin-top: 12px;
+    width: 25px;
+    height: 25px;
+}
+.panelbar{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    vertical-align: bottom;
+}

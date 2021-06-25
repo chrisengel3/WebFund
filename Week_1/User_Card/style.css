@@ -19,7 +19,7 @@
 #card{
     outline: solid 3px lightgray;
     width: 400px;
-    height: 300px;
+    height: 275px;
     margin: 20px;
 
 }
@@ -37,10 +37,10 @@
     border-radius: 50px;
     margin-left: 15px;
     position: relative;
-    top: 40px;
+    top: 50px;
 }
 #name{
-    margin: 30px 18px 5px 18px;
+    margin: 40px 18px 5px 18px;
 }
 #location{
     margin: 0px 10px 5px 5px;
@@ -58,5 +58,4 @@
 }
 #editprofile{
     margin-top: 10px;
-    vertical-align: center;
 }
