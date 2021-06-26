@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -8,13 +9,19 @@
     margin: 0 auto;
     background-color: whitesmoke;
 }
+#footer,
+.navbar,
+#search,
+#loginbtn{
+    font-family: 'Comfortaa';
+}
 .navbar{
     display: flex;
     justify-content: space-between;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     border-top: none;
-    color: white;
+    color: whitesmoke;
     background-color: black;
     width: auto;
     height: 50px;
@@ -49,9 +56,14 @@
 .leftContentPanel,
 .rightContentPanel{
     display: flex;
-    border: 3px solid lightgrey;
+    border: 3px solid white;
     /* border-radius: 5px; */
     width: 98%;
     min-height: 250px;
     margin-bottom: 10px;
+}
+#footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10px 10px 10px;
 }
