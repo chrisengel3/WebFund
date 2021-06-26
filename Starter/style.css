@@ -11,9 +11,10 @@
 }
 #footer,
 .navbar,
-#search,
+#searchBar,
 #loginbtn{
     font-family: 'Comfortaa';
+    font-weight: 700;
 }
 .navbar{
     display: flex;
@@ -30,7 +31,7 @@
     padding: 0px 25px 0px 25px;
     margin-bottom: 10px;
 }
-#search{
+#searchBar{
     width: 50%;
     height: 35%;
     background-color: whitesmoke;
@@ -63,8 +64,9 @@
     min-height: 250px;
     margin-bottom: 10px;
 }
-#footer{
+#footerTagCE{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
     padding: 50px 10px 10px 10px;
 }
