@@ -5,11 +5,11 @@
 }
 .container{
     width: 950px;
-    min-height: 250px;
+    min-height: 2550px;
     margin: 0 auto;
     background-color: whitesmoke;
 }
-#footer,
+#bottomBar,
 .navbar,
 #searchBar,
 #loginbtn{
@@ -19,7 +19,7 @@
 .navbar{
     display: flex;
     justify-content: space-between;
-    /* position: fixed; */
+    position: fixed;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     border-top: none;
@@ -64,7 +64,7 @@
     min-height: 250px;
     margin-bottom: 10px;
 }
-#footerTagCE{
+#bottomBarTagCE{
     display: flex;
     justify-content: flex-end;
     align-items: center;
