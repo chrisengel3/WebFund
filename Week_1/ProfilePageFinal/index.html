@@ -23,15 +23,15 @@
         <div id="main">
             <div id="leftpanel">
                 <div id="card">
-                <div class="blue"><img id="profpic" src="C:\Users\chris\Desktop\WEB_FUNDAMENTALS\Week_1\Media\1616785606__user-icons\icons\user-circle.png"></div>
+                <div class="blue"><img id="profpic" src="Usericons\icons\user-circle.png"></div>
                 <h1 id="name">Chris Engel</h1>
-                <img class="charms" src="C:\Users\chris\Desktop\WEB_FUNDAMENTALS\Week_1\Media\1616785606__user-icons\icons\map-marker.png" alt="locpin">
+                <img class="charms" src="icons\icons\map-marker.png" alt="locpin">
                 <h3 id="location">Los Angeles, CA</h3>
                 <p class="description">Sound Designer | Developer | Wow</p>
                 <p class="description">Master of shadows and the Internet!</p>
                 <div id="editprofile">
-                    <img class="charms" src="C:\Users\chris\Desktop\WEB_FUNDAMENTALS\Week_1\Media\1616785606__user-icons\icons\gear.png" alt="settings">
-                    <a href="" class="links">edit profile</a>
+                    <img class="charms" src="icons\icons\gear.png" alt="settings">
+                    <a onclick="nameChange()" href="#" class="links">edit profile</a>
                 </div>
                 </div>
                 <div id="Education">
@@ -48,16 +48,16 @@
                 <div id="connectionreq">
                     <div class="panelbar"><button class="notification2">2</button><h3 class="paneltitletext">Connection Requests</h3></div>    
                     <div class="otheruseryn">
-                        <img src="Usericons\icons\user-circle.png" alt="user" class="otheruserpic">
-                        <h3 class="otherusername">Todd E</h3>
-                        <img src="icons\icons\accept-circle.png" alt="yessymbol" class="yessymbol">
-                        <img src="icons\icons\close-circle.png" alt="nosymbol" class="nosymbol">
+                        <img src="Usericons\icons\user-circle.png" alt="user" class="otheruserpic request">
+                        <h3 class="otherusername request">Todd E</h3>
+                        <img onclick="clearRequest()" src="icons\icons\accept-circle.png" alt="yessymbol" class="yessymbol request">
+                        <img onclick="clearRequest()" src="icons\icons\close-circle.png" alt="nosymbol" class="nosymbol request">
                     </div>
                     <div class="otheruseryn">
                         <img src="Usericons\icons\user-circle.png" alt="user" class="otheruserpic">
                         <h3 class="otherusername">Phil K</h3>
-                        <img src="icons\icons\accept-circle.png" alt="yessymbol" class="yessymbol">
-                        <img src="icons\icons\close-circle.png" alt="nosymbol" class="nosymbol">
+                        <img onclick="clearRequest()" src="icons\icons\accept-circle.png" alt="yessymbol" class="yessymbol">
+                        <img onclick="clearRequest()" src="icons\icons\close-circle.png" alt="nosymbol" class="nosymbol">
                     </div>
                 </div>
                 <div id="connectionreq">
@@ -83,5 +83,6 @@
             </div>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>

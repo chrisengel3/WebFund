@@ -8,6 +8,8 @@
     width: 1200px;
     min-height: 750px;
     background-color: white;
+    margin: 0 auto;
+    padding: 0px 50px;
 }
 #topbar{
     display: flex;
