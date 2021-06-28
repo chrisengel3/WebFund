@@ -4,7 +4,7 @@
     padding: 0px;
 }
 .container{
-    width: 950px;
+    width: 800px;
     min-height: 2550px;
     margin: 0 auto;
     background-color: whitesmoke;
@@ -12,7 +12,9 @@
 #bottomBar,
 .navbar,
 #searchBar,
-#loginbtn{
+#loginbtn,
+.pageTitle,
+#main{
     font-family: 'Comfortaa';
     font-weight: 700;
 }
@@ -25,7 +27,7 @@
     border-top: none;
     color: whitesmoke;
     background-color: black;
-    width: 900px;
+    width: 750px;
     height: 50px;
     align-items: center;
     padding: 0px 25px 0px 25px;
@@ -40,29 +42,84 @@
     width: 70px;
     height: 25px;
 }
+.pageTitle{
+    text-align: center;
+    padding-top: 0px;
+    align-items: center;
+}
 #main{
     display: flex;
-    padding: 0px 5px;
+    justify-content: space-between;
+    padding: 0px 25px;
 
 }
 #leftPanel{
     /* outline: solid 2px lightgray; */
-    width: 70%;
+    width: 20%;
     min-height: 500px;
+    margin-top: 10px;
 }
 #rightPanel{
     /* outline: solid 2px lightgray; */
-    width: 30%;
+    width: 75%;
     min-height: 500px;
+    margin-top: 10px;
 }
 .leftContentPanel,
 .rightContentPanel{
-    display: flex;
-    border: 3px solid white;
+    /* display: flex; */
+    border: 3px solid black;
     /* border-radius: 5px; */
     width: 98%;
     min-height: 250px;
     margin-bottom: 10px;
+}
+.leftContentPanel{
+    text-align: center;
+    /* align-items: center; */
+    min-height: 20px;
+}
+.leftContentPanel > img{
+    text-align: center;
+    width: 75px;
+    margin: 25px 10px;
+}
+.leftContentPanel > .userName{
+    margin: 25px 10px;
+}
+.rightContentPanel{
+    /* display: flex; */
+    /* justify-content: space-between; */
+    min-height: 25px;
+    padding
+
+}
+.likeBar{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 15px;
+    width: 98%;
+    height: 25%;
+    align-items: center;
+}
+#likeButton{
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+#likeButton > button{
+    width: 60px;
+    height: 25px;
+    margin-left: 30px;
+    background-color: goldenrod;
+    color: black;
+    font-weight: 700;
+    box-shadow: 2px 2px 2px black;
+}
+.postContent{
+    margin: 25px 50px 25px 15px;
+    width: 82%;
+    
 }
 #bottomBarTagCE{
     display: flex;

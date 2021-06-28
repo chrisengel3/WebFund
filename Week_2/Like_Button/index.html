@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <meta http-equiv="refresh" content="1" > -->
+    <title>CEWebTemplate</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h1 class="navTitle">Network</h1>
+            <!-- <input type="text" placeholder="Search" id="searchBar"> -->
+            <!-- <button id="loginbtn">Login</button> -->
+        </div>
+        <div class="pageTitle">
+            <h2 id="yourFeed">Your Feed</h2>
+        </div>
+        <div id="main">
+            <div id="leftPanel">
+                <div class="leftContentPanel">
+                    <img src='media\user-circle.png' alt="profilepicture">
+                    <div><a href="">Add an avatar</a></div>
+                    <h3 class="userName">Chris Engel</h3>
+                </div>
+            </div>
+            <div id="rightPanel">
+                <div class="rightContentPanel">
+                    <div class="likeBar">
+                        <div class="otherUserName"><h3>Temp Name</h3></div>
+                        <div id="likeButton">
+                            <div><p id="firstLike">9 like(s)</p></div>
+                            <button onclick="firstAddLikes()">Like</button>
+                        </div>
+                    </div>
+                    <div class="postContent"><p>I just set up this new discord bot, let me know what you all think. <a href="">link</a></p></div>    
+                </div>
+                <div class="rightContentPanel">
+                    <div class="likeBar">
+                        <div class="otherUserName"><h3>Temp Name</h3></div>
+                        <div id="likeButton">
+                            <div><p id="secondLike">12 like(s)</p></div>
+                            <button onclick="secondAddLikes()">Like</button>
+                        </div>
+                    </div>
+                    <div class="postContent"><p>I just set up this new discord bot, let me know what you all think. <a href="">link</a></p></div>    
+                </div>
+                <div class="rightContentPanel">
+                    <div class="likeBar">
+                        <div class="otherUserName"><h3>Temp Name</h3></div>
+                        <div id="likeButton">
+                            <div><p id="thirdLike">9 like(s)</p></div>
+                            <button onclick="thirdAddLikes()">Like</button>
+                        </div>
+                    </div>
+                    <div class="postContent"><p>I just set up this new discord bot, let me know what you all think. <a href="">link</a></p></div>    
+                </div>
+            </div>
+        </div>
+        <div id="bottomBar">
+            <div id="bottomBarTagCE">
+                <div><p>&#128123;</p></div>
+                <!-- <div><p>MbCE</p></div> -->
+            </div>
+        </div>    
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
