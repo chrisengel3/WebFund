@@ -1,3 +1,14 @@
+// objects = unordered data structures
+
+var monster = {
+    id: 1,
+    name: "Bulbasaur",
+    types: ["poison", "grass"] 
+}
+
+monster.name
+monster["name"]
+
 var pokémon = [
     { "id": 1,   "name": "Bulbasaur",  "types": ["poison", "grass"] },
     { "id": 5,   "name": "Charmeleon", "types": ["fire"] },
@@ -31,31 +42,32 @@ var pokémon = [
 //     }
 // }
 
-// for(var i=0; i<pokémon.length; i++) {
-//     if(pokémon[i].types.length > 1) {
-//         console.log(pokémon[i]);
-//     }
-// }
-
-// for(var i=0; i<pokémon.length; i++) {
-//     if(pokémon[i].types == "poison") {
-//         console.log(pokémon[i].name);
-//     }
-// }
-
-// for(var i=0; i<pokémon.length; i++) {
-//     if(pokémon[i].types[1] == "flying") {
-//         console.log(pokémon[i].name);
-//     }
-// }
-
-var reversePoison = []
-
 for(var i=0; i<pokémon.length; i++) {
-    if(pokémon[i].types == "poison") {
-        reversePoison.push(pokémon[i].name);
+    if(pokémon[i].types.length > 1) {
+        console.log(pokémon[i]);
     }
 }
-reversePoison[0].reverse()
-reversePoison[1].reverse()
-console.log(reversePoison)
+
+// for(var i=0; i<pokémon.length; i++) {
+//     if(pokémon[i].types.length == 1 && pokemon[i].types[0] == "poison") {
+//         console.log(pokémon[i].name);
+//     }
+// }
+
+for(var i=0; i<pokémon.length; i++) {
+    if(pokémon[i].types.length > 1){
+        if(pokemon[i].types[1] == "flying") {
+            console.log(pokémon[i].types[0]);
+        }
+    }
+}
+
+// var reversePoison = []
+
+// for(var i=0; i<pokémon.length; i++) {
+//     if(pokémon[i].types.length == 1 && pokemon[i].types[0] == "poison") {
+//         reversePoison.push(pokémon[i].name);
+//     }
+// }
+// var
+// console.log(reversePoison)
