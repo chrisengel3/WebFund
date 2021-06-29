@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width: 1000px;
+    min-height: 350px;
+    /* margin: 0 auto; */
+    background-color: whitesmoke;
+    text-align: center;
+}
+#bottomBar,
+.navbar,
+#searchBar,
+#loginbtn,
+.pageTitle{
+    font-family: 'Comfortaa';
+    font-weight: 700;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    /* position: fixed; */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: none;
+    color: whitesmoke;
+    background-color: black;
+    width: 950px;
+    height: 50px;
+    align-items: center;
+    padding: 0px 25px 0px 25px;
+    margin-bottom: 15px;
+}
+#navlinks{
+    display: flex;
+    list-style-type: none;
+}
+#navlinks > li{
+    margin-right: 10px;
+}
+#navlinks > li > a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+#searchBar{
+    width: 50%;
+    height: 35%;
+    background-color: whitesmoke;
+}
+#loginbtn{
+    width: 70px;
+    height: 25px;
+}
+.pageTitle{
+    letter-spacing: 20px;
+}
+.banner{
+    display: block;
+    width: 92%;
+    margin: 15px auto;
+    min-height: 350px;
+    outline: solid 2px white;
+    /* margin: 15px 25px; */
+}
+.featurePanel{
+    display: block;
+    width: 92%;
+    margin: 25px auto 50px auto;
+    display: flex;
+    justify-content: space-between;
+    /* margin: 0px 25px; */
+    /* outline: solid 2px white; */
+
+}
+#leftPanel,
+#centerPanel,
+#rightPanel{
+    /* outline: solid 2px lightgray; */
+    width: 30%;
+    min-height: 350px;
+    outline: solid 2px white;
+}
+#bottomBarTagCE{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 50px 5px 5px 0px;
+}
