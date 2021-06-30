@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <meta http-equiv="refresh" content="1" > -->
+    <title>CEWebTemplate</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images\assets\leaf.png" alt="cart" id="leafIcon">
+            <h1 class="navTitle">EasyBay</h1>
+            <input type="text" placeholder="Search for anything" id="searchBar">
+            <h3>Sign In</h3>
+            <img src="images\assets\cart-dark.png" alt="cart" id="cartIcon" onclick="emptyCart()">
+        </div>
+        <div id="siteNavlinks">
+            <ul id="navlinks">
+                <li><a href="">Aeonium</a></li>
+                <li><a href="">Andormischus</a></li>
+                <li><a href="">Agave</a></li>
+                <li><a href="">Aloe</a></li>
+                <li><a href="">Anacampseros</a></li>
+                <li><a href="">Aristaloe</a></li>
+                <li><a href="">More...</a></li>
+            </ul>
+        </div>
+        <div class="lineBreak"></div>
+        <h2 class="pageTitle">Your Source for Serious Succulent Specialties</h2>
+        <div class="banner">
+            <div id="banner2Panel">
+                <div id="leftBannerPanel">
+                    <div id="leftSide">
+                        <p id="bannerTag">Discover succ-ulent varieties one pot or rack at a time!</p>
+                        <div id="discoverLink">
+                            <a href="">Discover</a>
+                            <img src="images\assets\arrow-light.png" alt="arrow-light">
+                        </div>
+                    </div>
+                    <div id="rightSide">
+                        <img onmouseover="hoverPictureChanger()" onmouseout="hoverPictureChangerOFF()" src="images\assets\succulents-1.jpg" alt="succulents1" id="succulents1">
+                    </div>
+                </div>
+                <div id="rightBannerPanel">
+                    <!-- <div class="rightContentPanel"> -->
+                    <img src="images\assets\aloe-m.jpg" alt="aloemacro" id="aloeBannerPic">
+                    <button id="aloeButton">Soothing Aloe <img src="images\assets\arrow-light.png" alt="arrow-light"></button>
+                </div>
+            </div>
+        </div>
+        <div class="featurePanel">
+            <div class="featurePanelContent">
+                <img src="images\assets\aeonium-s.jpg" alt="aeonium">
+                <p>Aeonium</p>
+            </div>
+            <div class="featurePanelContent">
+                <img src="images\assets\aloe-s.jpg" alt="aloe">
+                <p>Aloe</p>
+            </div>
+            <div class="featurePanelContent">
+                <img src="images\assets\cactus-s.jpg" alt="cactus">
+                <p>Cactus</p>
+            </div>
+            <div class="featurePanelContent">
+                <img src="images\assets\echeveria-s.jpg" alt="echeveria">
+                <p>Echeveria</p>
+            </div>
+            <div class="featurePanelContent">
+                <img src="images\assets\sedum-s.jpg" alt="sedum">
+                <p>Sedum</p>
+            </div>
+            <div class="featurePanelContent">
+                <img src="images\assets\sempervivum-s.jpg" alt="sempervivum">
+                <p>Sempervivum</p>
+            </div>
+        </div>
+        <div id="cookiePopup">
+            <img src="images\assets\alert-dark.png" alt="caution" id="cautionIcon">
+            <p>this site makes use of third-party cookies, by clicking "I accept" you agree to the terms outlined in our <a href="">cookie policy.</a></p>
+            <button onclick="cookieAccept()" id="acceptButton">I accept</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

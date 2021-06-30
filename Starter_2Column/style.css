@@ -49,12 +49,12 @@
 #leftPanel{
     /* outline: solid 2px lightgray; */
     width: 70%;
-    min-height: 500px;
+    min-height: 200px;
 }
 #rightPanel{
     /* outline: solid 2px lightgray; */
     width: 30%;
-    min-height: 500px;
+    min-height: 200px;
 }
 .leftContentPanel,
 .rightContentPanel{
