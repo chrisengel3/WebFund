@@ -6,7 +6,7 @@
 .container{
     width: 1200px;
     min-height: 350px;
-    /* margin: 0 auto; */
+    margin: 0 auto;
     padding: 0px 100px;
     background-color: white;
     text-align: center;
@@ -40,7 +40,10 @@
     height: 50px;
     align-items: center;
     padding: 0px 25px 0px 25px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+}
+.navbar > h3{
+    font-size: 1rem;
 }
 #navlinks{
     display: flex;
@@ -52,9 +55,10 @@
 #navlinks > li > a{
     text-decoration: none;
     color: black;
+    font-size: 0.9rem;
 }
 #searchBar{
-    width: 64%;
+    width: 70%;
     height: 60%;
     background-color: whitesmoke;
     border-radius: 15px;
@@ -68,14 +72,13 @@
 #leafIcon{
     height: 40px;
     background-color: #00D1B2;
-    -webkit-transform: scale(-1,1);
-
 }
 .pageTitle{
-    margin: 25px 0px 30px 0px;
+    margin: 35px 0px 40px 0px;
     word-spacing: 1.1rem;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     font-weight: 700;
+    font-size: 1.8rem;
 }
 .lineBreak{
     background-color: black;
@@ -84,6 +87,7 @@
     margin: 10px auto;
     padding: 0px 15px;
 }
+
 #banner2Panel{
     display: flex;
     justify-content: space-between;
@@ -100,10 +104,10 @@
 }
 #leftSide{
     text-align: center;
-    width: 43%;
+    width: 42%;
     background-color: #00D1B2;
     color: white;
-    height: 71.4%;
+    height: 260px;
     padding: 50px 25px;
     font-size: 2.1rem;
 }
@@ -168,7 +172,7 @@
 }
 .featurePanel{
     width: 1100px;
-    margin: 15px 0px 50px 29px;
+    margin: 20px 0px 50px 29px;
     display: flex;
     justify-content: space-between;
     /* margin: 0px 25px; */
@@ -203,11 +207,13 @@
     border: solid black 2px;
     background-color: white;
     position: fixed;
-    bottom: 0px;
-    left: 129px;
+    bottom: 0%;
+    left: auto;
+    right: auto;
+    margin-left: 29px;
 }
 #cookiePopup > p{
-    width: 80%;
+    width: 75%;
     text-align: left;
     margin-left: 20px;
     font-size: 1.1rem;
@@ -219,5 +225,5 @@
     color: white;
     width: 120px;
     height: 35px;
-    box-shadow: 2px 2px black;
+    box-shadow: 4px 4px black;
 }
