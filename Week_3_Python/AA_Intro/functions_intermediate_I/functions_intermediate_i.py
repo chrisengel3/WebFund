@@ -1,4 +1,4 @@
-# UPDATING VALUES IN DICTIONARIES AND LISTS
+# UPDATING VALUES IN DICTIONARIES AND LISTS ===================================================== 11111111111111111
 x = [ [5,2,3], [10,8,9] ] 
 students = [
     {'first_name':  'Michael', 'last_name' : 'Jordan'},
@@ -23,7 +23,7 @@ z[0]['y'] = 30
 print(z) 
 
 
-# ITERATE THROUGH A LIST OF DICTIONARIES
+# ITERATE THROUGH A LIST OF DICTIONARIES ============================================================= 2222222222222222222
 students = [
         {'first_name':  'Michael', 'last_name' : 'Jordan'},
         {'first_name' : 'John', 'last_name' : 'Rosales'},
@@ -44,7 +44,7 @@ iterateDictionary(students)
 
 
 
-# GET VALUES FROM A LIST OF DICTIONARIES
+# GET VALUES FROM A LIST OF DICTIONARIES ============================================================ 33333333333
 def iterate_dictionary2(key_name, students):
     for i in range(len(students)):
         print(students[i][key_name])
@@ -54,6 +54,7 @@ iterate_dictionary2('last_name', students)
 
 
 
+# ITERATE THROUGH A DICTIONARY WITH LIST VALUES ============================================================ 444444444444444
 dojo = {
     'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
     'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
