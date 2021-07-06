@@ -1,0 +1,71 @@
+/* utilities ----------------------------------- */
+#DARKNESS{
+    background-color: black;
+}
+
+
+/* nav bar ------------------------------------- */
+
+#CEnavBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px;
+    border-bottom: 2px solid whitesmoke;
+}
+#titleBlock{
+    width: 30%;
+}
+#navLinks{
+    width: 90%;
+}
+
+/* banner 60/40 --------------------------------- */
+
+.bannerBlock6040{
+    display: flex;
+    justify-content: space-between;
+    min-height: 250px;
+    padding: 50px 0px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid whitesmoke;
+}
+.bannerBlock6040Left{
+    width: 60%;
+    text-align: left;
+}
+.bannerBlock6040Right{
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* BANNER 40/60 --------------------------------- */
+
+.bannerBlock4060{
+    display: flex;
+    justify-content: space-between;
+    min-height: 250px;
+    padding: 50px 0px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid whitesmoke;
+
+}
+.bannerBlock4060Left{
+    width: 40%;
+    text-align: center;
+}
+.bannerBlock4060Right{
+    width: 60%;
+    text-align: right;
+}
+
+/* POST UTILITIES ----------------------------- */
+.noBottomBorder{
+    border-bottom: none;
+}
+.paddingBottomSmall{
+    padding-bottom: 15px;
+}
