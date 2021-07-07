@@ -3,7 +3,7 @@ class User:
     def __init__(self, name, email):
         self.name = name
         self.email = email
-        self.account = bank_account(0.2, 0)
+        self.account = bank_account(0.02, 0)
     
     def deposit(self, amount):
         self.account.deposit(amount)
@@ -78,4 +78,4 @@ Brianna.deposit(1000).withdrawl(50).withdrawl(50).withdrawl(50).balance()
 # account1.deposit(50).deposit(55).deposit(50).withdrawl(50).yield_interest().balance()
 # account2.deposit(52220).deposit(1275).withdrawl(225).withdrawl(25).withdrawl(25).withdrawl(25).yield_interest().balance()
 
-bank_account.print_all_instances()
+# bank_account.print_all_instances()
