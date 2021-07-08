@@ -1,81 +1,153 @@
-class User:
-    bank_name = "Late Stage Capital"
-    def __init__(self, name, email):
-        self.name = name
-        self.email = email
-        self.account = bank_account(0.2, 0)
-    
-    def deposit(self, amount):
-        self.account.deposit(amount)
-        self.account.balance()
-        return self
+import random
+import os
+import time
 
-    def withdrawl(self, amount):
-        self.account.withdrawl(amount)
-        self.account.balance()
-        return self
+def drawAscii(aFileName):
+    file = open(aFileName + ".txt", "r")
+    image = file.read()
+    print(image)
+    file.close()
 
-    def balance(self):
-        print(self.name)
-        print(self.account.balance)
-        return self
+#Heroes
+class Knight (object):
+    health = 150
+    strength = 15
+    defence = 10
+    magic = 1
 
-    def transfer(self, receiver, amount):
-        self.account_balance -= amount
-        receiver.account_balance += amount
-        print(f"{self.name}'s account balance is now: {self.account_balance}.")
-        print(f"{receiver.name}'s account balance is now: {receiver.account_balance}.")
-        return self
-        
-class bank_account:
-    # don't forget to add some default values for these parameters!
-    bank_instances = []
-    def __init__(self, int_rate, account_balance): 
-        self.int_rate = int_rate
-        self.account_balance = account_balance
-        bank_account.bank_instances.append(self)
+class Wizard (object):
+    health = 75
+    strength = 5
+    defence = 5
+    magic = 15
 
-    def deposit(self, amount):
-        self.account_balance += amount
-        return self
+class Druid (object):
+    health = 125
+    strength = 10
+    defence = 12
+    magic = 6
 
-    def withdrawl(self, amount):
-        self.account_balance -= amount
-        return self
+class Nobody (object):
+    health = 100
+    strength = 7
+    defence = 7
+    magic = 12
 
-    def balance(self):
-        # print(self.name)
-        print(self.account_balance)
-        return self
+#Enemies
+class Goblin (object):
+    name = "Goblin"
+    health = 30
+    strength = 2
+    defence = 2
+    magic = 1
+    loot = random.randint(0,2)
 
-    def yield_interest(self):
-        if self.account_balance < 0:
-            print("Insufficient Funds: Charging a $5.00 fee.")
-            self.account_balance -= 5
-        else:
-            self.account_balance += (self.account_balance * self.int_rate)
-            return self
+class Demon (object):
+    name = "Demon"
+    health = 50
+    strength = 3
+    defence = 4
+    magic = 5
+    loot = random.randint(1,4)
 
-    @classmethod
-    def print_all_instances(cls):
-        for value in cls.bank_instances:
-            value.balance()
+class Ogre (object):
+    name = "Ogre"
+    health = 70
+    strength = 5
+    defence = 6
+    magic = 0
+    loot = random.randint(3,5)
+
+#Hero Selection
+def heroselect ():
+    print ("What are you? \n   1, 2, or 3? \n     Tell me your number\n")
+    time.sleep(2)
+    print("       ...You must be somebody\n")
+    time.sleep(2)
+    selection = input("1. Knight \n2. Wizard \n3. Druid \n\n4. Nobody.\n\n")
+    if selection == "1":
+        character = Knight
+        print("-----------------------------\n")
+        drawAscii("KnightSword")
+        print ("\nThe ground shakes\n")
+        return character
+
+    elif selection == "2":
+        character = Wizard
+        print("-----------------------------\n")
+        drawAscii("Wizard")
+        print ("\nThe air charges\n")
+        return character
+
+    elif selection == "3":
+        character = Druid
+        drawAscii("Tree")
+        print ("\nThe trees smile\n")
+        return character
+
+    elif selection == "4":
+        character = Nobody
+        drawAscii("TheButler")
+        print ("\nThe Butler is Watching.\n")
+        return character
+
+    else:
+        print ("-------\n>>select with 1, 2, or 3<<\n-------\n")
+        heroselect()
+
+def enemyselect(Goblin, Demon, Ogre):
+    enemyList = [Goblin,Demon,Ogre]
+    chance = random.randint(0,2)
+    enemy = enemyList[chance]
+    return enemy
+
+def loot():
+    loot = ["gem", "piece of meat", "clump of herbs", "mushroom", "potion"]
+    lootChance = random.randint(0,4)
+    lootDrop = loot[lootChance]
+    return lootDrop
+
+def battlestate():
+    enemy = enemyselect(Goblin, Demon, Ogre)
+    print ("-----------------------------\nOut of the darkness a", enemy.name, "rushes towards you.")
+    while enemy.health > 0 :
+        choice = input("-----------------------------\nWhat will you do?\n\n1. Physical Strength\n\n2. Magical Attack\n\n   3. Run\n\n")
 
 
+        if choice == "1":
+            print ("-----------------------------\nYou come down on the", enemy.name, "with all your might.")
+            hitchance = random.randint(0, 10)
+            if hitchance > 3:
+                enemy.health = enemy.health - character.strength
+                print("-----------------------------\nYou cleave and crush into the", enemy.name)
 
-Chris = User("Chris Engel", "thisischrisemail@gmail.com")
-Reagan = User("Reagan Shankland", "thisisreaganemail@gmail.com")
-Brianna = User("Brianna Ballow", "thisisbriannaemail@gmail.com")
+                if enemy.health > 0:
+                    character.health = character.health - (enemy.strength / character.defence)
+                    print ("-----------------------------\nthe", enemy.name, "attacks")
+                    hitchance = random.randint(0,10)
+                    if hitchance > 5:
+                        character.health = character.health - (enemy.strength / character.defence)
+                        print("-----------------------------\nthe", enemy.name, "strikes you.")
+                else:
+                    if enemy.name == "Goblin":
+                        enemy.health = 30
 
-Chris.deposit(100).deposit(200).deposit(50).withdrawl(100).balance()
-Reagan.deposit(100).deposit(200).withdrawl(50).balance()
-Brianna.deposit(1000).withdrawl(50).withdrawl(50).withdrawl(50).balance()
-# Chris.transfer(Brianna, 7)
+                    elif enemy.name == "Demon":
+                        enemy.health = 50
 
-# account1 = bank_account(0.2, 1000)
-# account2 = bank_account(0.1, 2000)
+                    elif enemy.name == "Ogre":
+                        enemy.health = 70
 
-# account1.deposit(50).deposit(55).deposit(50).withdrawl(50).yield_interest().balance()
-# account2.deposit(52220).deposit(1275).withdrawl(225).withdrawl(25).withdrawl(25).withdrawl(25).yield_interest().balance()
+                    print ("-----------------------------\nThe", enemy.name, "falls.")
+                    print ("It dropped something...")
+                    lootDrop = loot()
+                    print ("-----------------------------\nIt's a", lootDrop)
+                    break
+            else:
+                print("-----------------------------\nYou miss.")
+                print("the", enemy.name, "attacks while you're off balance and strikes you.")
+                character.health = character.health - enemy.strength
 
-bank_account.print_all_instances()
+
+character = heroselect()
+battlestate()
