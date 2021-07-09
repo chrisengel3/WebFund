@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width: 950px;
+    min-height: 2550px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    text-align: center;
+}
+#bottomBar,
+.navbar,
+#searchBar,
+#loginbtn{
+    font-family: 'Comfortaa';
+    font-weight: 700;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    /* position: fixed; */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: none;
+    color: whitesmoke;
+    background-color: black;
+    width: 900px;
+    height: 50px;
+    align-items: center;
+    padding: 0px 25px 0px 25px;
+    margin-bottom: 10px;
+}
+#searchBar{
+    width: 50%;
+    height: 35%;
+    background-color: whitesmoke;
+}
+#loginbtn{
+    width: 70px;
+    height: 25px;
+}
+#main{
+    display: flex;
+    padding: 0px 5px;
+
+}
+#leftPanel{
+    /* outline: solid 2px lightgray; */
+    width: 70%;
+    min-height: 200px;
+}
+#rightPanel{
+    /* outline: solid 2px lightgray; */
+    width: 30%;
+    min-height: 200px;
+}
+.leftContentPanel,
+.rightContentPanel{
+    display: flex;
+    border: 3px solid white;
+    /* border-radius: 5px; */
+    width: 98%;
+    min-height: 250px;
+    margin-bottom: 10px;
+}
+#bottomBarTagCE{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 50px 5px 5px 0px;
+}

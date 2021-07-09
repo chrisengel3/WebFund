@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <!-- <meta http-equiv="refresh" content="1" > -->
+    <title>CEWebTemplate</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h1 class="navTitle">TITLE</h1>
+            <input type="text" placeholder="Search" id="searchBar">
+            <button id="loginbtn">Login</button>
+        </div>
+        <h2 class="pageTitle">Flask</h2>
+        <p>Phrase: {{ phrase }}</p>
+        <p>Times: {{ times }}</p>
+        {% for x in range(0,times): %}
+            <p>{{ phrase }}</p>
+        {% endfor %}      
+        {% if phrase == "hello" %}
+            <p>The phrase says hello</p>
+        {% endif %}
+        <div id="banner2Panel">
+            <div id="leftPanel">
+                <div class="leftContentPanel">
+
+                </div>
+            </div>
+            <div id="rightPanel">
+                <div class="rightContentPanel">
+                    
+                </div>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>
