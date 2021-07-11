@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class= "container">
+        <div class="boardContainer">
+            <table>
+                {%for row in range(x//2)%}
+                <tr>
+                    {% for col in range(y)%}
+                    <td class="spots" {%if col % 2 == 0 %} style="background-color:{{color1}};" {% else %} style="background-color:{{color2}}" {%endif%}></td>
+                    {%endfor%}
+                </tr>
+                <tr>
+                    {% for col in range(y)%}
+                    <td class="spots" {%if col % 2 == 0 %} style="background-color: {{color2}};" {% else %} style="background-color: {{color1}}" {%endif%}></td>
+                    {%endfor%}
+                </tr>
+                {%endfor%}
+            </table>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+    
+</body>
+</html>
