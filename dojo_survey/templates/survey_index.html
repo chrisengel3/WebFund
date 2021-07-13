@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is the Main page</h1>
+        <form  action="/process" method="post">
+            <p>
+                Name:
+                <input type="text" name ="name" id="">
+            </p>
+            <p>
+                Dojo Location:
+                <select name="Dojo_Location" id="location">
+                    <option value="Los Angeles">Los Angeles</option>
+                    <option value="Dallas">Dallas</option>
+                    <option value="Philadelphia">Philadelphia</option>
+                    <option value="New York City">New York City</option>
+                </select>
+            </p>
+            <p>
+                Favorite Language:
+                <select name="Favorite_Language" id="favoriteLanguage">
+                    <option value="Python">Python</option>
+                    <option value="C++">C++</option>
+                    <option value="CSS">CSS</option>
+                    <option value="HTML">HTML</option>
+                </select>
+            </p>
+                <p>Comments (optional):</p>
+                <p><textarea name ="comments_optional" id="commentsBox" cols="35" rows="5"></textarea></p>
+            <button>submit</button>
+        </form>
+    </div>
+</body>
+</html>
